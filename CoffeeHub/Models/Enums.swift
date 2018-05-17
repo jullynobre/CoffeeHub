@@ -8,21 +8,21 @@
 
 import Foundation
 
-enum Difficulty: String {
-    case easy = "Coffee and Milk"
-    case medium = "Coffee Noob"
-    case hard = "Coffee Master Race"
+enum Difficulty {
+    case easy //"Coffee and Milk"
+    case medium //"Coffee Noob"
+    case hard //"Coffee Master Race"
 }
 
-enum Measurement: String{
-    case gram = "g"
-    case kilogram = "kg"
-    case liter = "L"
-    case poung = "lb"
-    case milliliter = "mL"
-    case ounce = "oz"
-    case cup = "c"
-    case pint = "pt"
-    case teaspoon = "tsp"
-    case tablespoon = "Tbsp"
+enum Measurement{
+    case gram // "g"
+    case kilogram // "kg"
+    case liter // "L"
+    case poung // "lb"
+    case milliliter // "mL"
+    case ounce // "oz"
+    case cup // "c"
+    case pint // "pt"
+    case teaspoon // "tsp"
+    case tablespoon // "Tbsp"
 }
