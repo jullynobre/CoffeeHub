@@ -9,11 +9,17 @@
 import Foundation
 import UIKit
 
-class Grains: Coffee {
+class Grain: Coffee {
     let typeDescription: String
     
-    init(name: String, icon: UIImage, difficulty: Difficulty, prepTime: Float, typeDescription: String) {
+    init(name: String, icon: UIImage?, difficulty: Difficulty, prepTime: Float, typeDescription: String) {
+        var image: UIImage = #imageLiteral(resourceName: "placeholderGrain")
+        if let unwrappedIcon = icon{
+            image = unwrappedIcon
+        }
+        
         self.typeDescription = typeDescription
-        super.init(name: name, icon: icon, difficulty: difficulty, prepTime: prepTime)
+    
+        super.init(name: name, icon: image, difficulty: difficulty, prepTime: prepTime)
     }
 }
