@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		BE0CAAA420AC4B4E00EA696C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAA320AC4B4E00EA696C /* AppDelegate.swift */; };
-		BE0CAAA620AC4B4E00EA696C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAA520AC4B4E00EA696C /* ViewController.swift */; };
 		BE0CAAA920AC4B4E00EA696C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0CAAA720AC4B4E00EA696C /* Main.storyboard */; };
 		BE0CAAAB20AC4B4E00EA696C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0CAAAA20AC4B4E00EA696C /* Assets.xcassets */; };
 		BE0CAAAE20AC4B4E00EA696C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0CAAAC20AC4B4E00EA696C /* LaunchScreen.storyboard */; };
+		BE0CAAB720AC525700EA696C /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAB620AC525700EA696C /* Coffee.swift */; };
+		BE0CAAB920AC52F300EA696C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAB820AC52F200EA696C /* Enums.swift */; };
+		BE0CAABB20AC554300EA696C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAABA20AC554300EA696C /* Recipe.swift */; };
+		BE0CAABD20AC55B000EA696C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAABC20AC55B000EA696C /* Ingredient.swift */; };
+		BE0CAABF20AC597500EA696C /* Grain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAABE20AC597500EA696C /* Grain.swift */; };
+		BE0CAAC220AC74DD00EA696C /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */; };
+		BE0CAAC720AC75A500EA696C /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0CAAC620AC75A500EA696C /* Card.xib */; };
+		BE0CAAC920AD9B1000EA696C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAC820AD9B1000EA696C /* HomeTableViewController.swift */; };
+		BE0CAACD20ADA8C300EA696C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAACC20ADA8C300EA696C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE0CAAA020AC4B4E00EA696C /* CoffeeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0CAAA320AC4B4E00EA696C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE0CAAA520AC4B4E00EA696C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE0CAAA820AC4B4E00EA696C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE0CAAAA20AC4B4E00EA696C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0CAAAD20AC4B4E00EA696C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0CAAAF20AC4B4E00EA696C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0CAAB620AC525700EA696C /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		BE0CAAB820AC52F200EA696C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		BE0CAABA20AC554300EA696C /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BE0CAABC20AC55B000EA696C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		BE0CAABE20AC597500EA696C /* Grain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grain.swift; sourceTree = "<group>"; };
+		BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		BE0CAAC620AC75A500EA696C /* Card.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		BE0CAAC820AD9B1000EA696C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		BE0CAACC20ADA8C300EA696C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,46 @@
 		BE0CAAA220AC4B4E00EA696C /* CoffeeHub */ = {
 			isa = PBXGroup;
 			children = (
+				BE0CAAC320AC74EE00EA696C /* Components */,
+				BE0CAAC020AC74B100EA696C /* Controllers */,
+				BE0CAAB520AC520300EA696C /* Models */,
 				BE0CAAA320AC4B4E00EA696C /* AppDelegate.swift */,
-				BE0CAAA520AC4B4E00EA696C /* ViewController.swift */,
 				BE0CAAA720AC4B4E00EA696C /* Main.storyboard */,
 				BE0CAAAA20AC4B4E00EA696C /* Assets.xcassets */,
 				BE0CAAAC20AC4B4E00EA696C /* LaunchScreen.storyboard */,
 				BE0CAAAF20AC4B4E00EA696C /* Info.plist */,
 			);
 			path = CoffeeHub;
+			sourceTree = "<group>";
+		};
+		BE0CAAB520AC520300EA696C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CAAB620AC525700EA696C /* Coffee.swift */,
+				BE0CAAB820AC52F200EA696C /* Enums.swift */,
+				BE0CAABA20AC554300EA696C /* Recipe.swift */,
+				BE0CAABC20AC55B000EA696C /* Ingredient.swift */,
+				BE0CAABE20AC597500EA696C /* Grain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE0CAAC020AC74B100EA696C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */,
+				BE0CAAC820AD9B1000EA696C /* HomeTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BE0CAAC320AC74EE00EA696C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CAAC620AC75A500EA696C /* Card.xib */,
+				BE0CAACC20ADA8C300EA696C /* Card.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +174,7 @@
 				BE0CAAAE20AC4B4E00EA696C /* LaunchScreen.storyboard in Resources */,
 				BE0CAAAB20AC4B4E00EA696C /* Assets.xcassets in Resources */,
 				BE0CAAA920AC4B4E00EA696C /* Main.storyboard in Resources */,
+				BE0CAAC720AC75A500EA696C /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE0CAAA620AC4B4E00EA696C /* ViewController.swift in Sources */,
+				BE0CAABF20AC597500EA696C /* Grain.swift in Sources */,
+				BE0CAACD20ADA8C300EA696C /* Card.swift in Sources */,
+				BE0CAAB720AC525700EA696C /* Coffee.swift in Sources */,
+				BE0CAAB920AC52F300EA696C /* Enums.swift in Sources */,
 				BE0CAAA420AC4B4E00EA696C /* AppDelegate.swift in Sources */,
+				BE0CAABD20AC55B000EA696C /* Ingredient.swift in Sources */,
+				BE0CAAC920AD9B1000EA696C /* HomeTableViewController.swift in Sources */,
+				BE0CAABB20AC554300EA696C /* Recipe.swift in Sources */,
+				BE0CAAC220AC74DD00EA696C /* ArchiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
