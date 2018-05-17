@@ -9,7 +9,11 @@
 import UIKit
 
 class Card: UIView {
-
+    @IBOutlet weak var imgCoffee: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblPrepTime: UILabel!
+    @IBOutlet weak var lblDifficulty: UILabel!
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
