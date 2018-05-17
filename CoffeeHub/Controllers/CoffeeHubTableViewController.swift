@@ -1,5 +1,5 @@
 //
-//  HomeTableViewController.swift
+//  CoffeeHubTableViewController.swift
 //  CoffeeHub
 //
 //  Created by Ada 2018 on 17/05/18.
@@ -8,15 +8,16 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
-    
-    var recipes: [Recipe] = []
-    var grains: [Grain] = []
-    var favorites: [Coffee] = [Grain.init(name: "Arábica", icon: #imageLiteral(resourceName: "finalLogo"), difficulty: Difficulty.easy, prepTime: Float(20.9), typeDescription: "Lalala")]
-    
+class CoffeeHubTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +28,16 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -43,7 +45,7 @@ class HomeTableViewController: UITableViewController {
 
         return cell
     }
- 
+    */
 
     /*
     // Override to support conditional editing of the table view.
