@@ -8,14 +8,15 @@
 
 import UIKit
 
-class CoffeeTableViewCell: UITableViewCell {
-    @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var label: UILabel!
+class TableViewCell: UITableViewCell {
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         
     }
 
@@ -24,5 +25,53 @@ class CoffeeTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+}
+
+extension TableViewCell: UICollectionViewDelegate {
+    
+    
+    
+}
+
+extension TableViewCell: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        switch collectionView.tag {
+        case 0:
+            return StaticData.sharedInstance.favorites.count
+        case 1:
+            return StaticData.sharedInstance.recipes.count
+        default:
+            return StaticData.sharedInstance.grains.count
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        
+        let coffee: Coffee
+        
+        switch collectionView.tag {
+        case 0:
+            coffee = StaticData.sharedInstance.favorites[indexPath.row]
+        case 1:
+            coffee = StaticData.sharedInstance.recipes[indexPath.row]
+        default:
+            coffee = StaticData.sharedInstance.grains[indexPath.row]
+        }
+        
+        cell.imgCoffee.image = coffee.icon
+        cell.lblName.text = coffee.name
+        cell.lblPrepTime.text = "\(coffee.prepTime)"
+        cell.lblDifficulty.text = "\(coffee.difficulty)"
+        
+        return cell
+    }
+    
 }
 
