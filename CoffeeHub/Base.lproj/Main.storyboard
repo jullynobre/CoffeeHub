@@ -25,44 +25,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pf-j2-d3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="128"/>
+            <point key="canvasLocation" x="1286" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Grain View Controller-->
         <scene sceneID="eei-mV-vha">
             <objects>
-                <viewController id="cDs-YB-PqU" sceneMemberID="viewController">
+                <viewController id="cDs-YB-PqU" customClass="GrainViewController" customModule="CoffeeHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iqz-bz-bXV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-lY-NV9">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-lY-NV9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="wag-fY-NPr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="wag-fY-NPr">
                                         <rect key="frame" x="0.0" y="-64" width="381" height="326"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-vc-sRJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-vc-sRJ">
                                         <rect key="frame" x="97" y="9" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="i3U-eb-Uzz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLv-gF-yDe">
+                                        <rect key="frame" x="342" y="222" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoV-ku-M4h">
+                                        <rect key="frame" x="275" y="222" width="64" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.18823529410000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wag-fY-NPr" firstAttribute="top" secondItem="RBH-lY-NV9" secondAttribute="top" id="8he-Kc-cfq"/>
+                                    <constraint firstAttribute="bottom" secondItem="wag-fY-NPr" secondAttribute="bottom" constant="341" id="9aW-Fh-gPU"/>
+                                    <constraint firstItem="PMn-vc-sRJ" firstAttribute="leading" secondItem="RBH-lY-NV9" secondAttribute="leading" constant="97" id="B4C-Di-tSE"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMn-vc-sRJ" secondAttribute="trailing" constant="98" id="CCA-Pw-BXH"/>
+                                    <constraint firstItem="wag-fY-NPr" firstAttribute="leading" secondItem="RBH-lY-NV9" secondAttribute="leading" id="NTh-NF-RTP"/>
+                                    <constraint firstItem="PMn-vc-sRJ" firstAttribute="top" secondItem="RBH-lY-NV9" secondAttribute="top" constant="73" id="aeG-Zw-6bN"/>
+                                    <constraint firstItem="wag-fY-NPr" firstAttribute="centerY" secondItem="PMn-vc-sRJ" secondAttribute="centerY" id="ico-ZG-sEl"/>
+                                    <constraint firstAttribute="trailing" secondItem="wag-fY-NPr" secondAttribute="trailing" constant="-6" id="uze-RS-bUa"/>
+                                    <constraint firstItem="PMn-vc-sRJ" firstAttribute="centerX" secondItem="RBH-lY-NV9" secondAttribute="centerX" id="yuy-mo-46E"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RBH-lY-NV9" firstAttribute="top" secondItem="iqz-bz-bXV" secondAttribute="top" id="16y-U2-J3b"/>
-                            <constraint firstItem="God-lD-ecB" firstAttribute="bottom" secondItem="RBH-lY-NV9" secondAttribute="bottom" id="Wim-h8-Y3x"/>
-                            <constraint firstItem="RBH-lY-NV9" firstAttribute="leading" secondItem="God-lD-ecB" secondAttribute="leading" id="ZYs-6m-ltt"/>
-                            <constraint firstItem="God-lD-ecB" firstAttribute="trailing" secondItem="RBH-lY-NV9" secondAttribute="trailing" id="l3Z-gR-IPX"/>
+                            <constraint firstAttribute="trailing" secondItem="RBH-lY-NV9" secondAttribute="trailing" id="CJs-LT-Une"/>
+                            <constraint firstItem="RBH-lY-NV9" firstAttribute="top" secondItem="iqz-bz-bXV" secondAttribute="top" id="YEm-31-fEC"/>
+                            <constraint firstItem="RBH-lY-NV9" firstAttribute="bottom" secondItem="God-lD-ecB" secondAttribute="bottom" id="a0c-Qj-2Zf"/>
+                            <constraint firstItem="RBH-lY-NV9" firstAttribute="leading" secondItem="iqz-bz-bXV" secondAttribute="leading" id="xO3-yy-c5k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="God-lD-ecB"/>
                     </view>
+                    <connections>
+                        <outlet property="imgCoffee" destination="PMn-vc-sRJ" id="Wag-tA-efz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J12-VI-VfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445.60000000000002" y="861.3193403298352"/>
+            <point key="canvasLocation" x="472.80000000000001" y="877.51124437781118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YOg-kU-RAq">
@@ -164,16 +190,21 @@
                                                                     </view>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="1" green="0.75294117650000003" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
                                                     </view>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outlet property="containerView" destination="MCV-6F-E7g" id="22N-kt-CXK"/>
                                                         <outlet property="imgCoffee" destination="s2b-Ug-dEU" id="SxR-gL-eJT"/>
                                                         <outlet property="lblDifficulty" destination="l6K-7u-uc0" id="57h-yw-WGV"/>
                                                         <outlet property="lblName" destination="gAe-Td-3ql" id="dQV-r2-GUH"/>
                                                         <outlet property="lblPrepTime" destination="1Z1-7Q-le1" id="Amg-7W-qPD"/>
-                                                        <segue destination="cDs-YB-PqU" kind="show" id="95T-V4-HDI"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
@@ -216,10 +247,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="cDs-YB-PqU" kind="show" identifier="GrainDetails" id="wNF-Vg-FEu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arD-Oq-WWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445.60000000000002" y="128.18590704647679"/>
+            <point key="canvasLocation" x="474" y="134"/>
         </scene>
     </scenes>
     <resources>

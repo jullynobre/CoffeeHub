@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol CoffeeDelegate{
+    func sendDetais(of coffee: Coffee)
+}

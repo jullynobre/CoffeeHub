@@ -22,5 +22,15 @@ class CollectionViewCell: UICollectionViewCell {
         //self.containerView.layer.borderWidth = 0.0
         //self.containerView.layer.borderColor = UIColor.brown.cgColor
         self.containerView.layer.cornerRadius = 15.0
+        
+//        self.containerView.layer.borderWidth = 1.0
+//        self.containerView.layer.borderColor = UIColor.clear.cgColor
+//
+//        self.containerView.layer.shadowColor = UIColor.lightGray.cgColor
+//        self.containerView.layer.shadowOffset = CGSize(width:5.0,height: 5.0)
+//        self.containerView.layer.shadowRadius = 1.5
+//        self.containerView.layer.shadowOpacity = 3.0
+//        self.layer.masksToBounds = false;
+//        self.containerView.layer.shadowPath = UIBezierPath(roundedRect:self.containerView.bounds, cornerRadius:self.containerView.layer.cornerRadius).cgPath
     }
 }

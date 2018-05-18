@@ -23,6 +23,8 @@
 		BE0CAAD320ADBB6800EA696C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAD220ADBB6800EA696C /* TableViewCell.swift */; };
 		BEA7559620ADC1DA00B2024F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559520ADC1DA00B2024F /* CollectionViewCell.swift */; };
 		BEA7559820ADCB6D00B2024F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559720ADCB6D00B2024F /* Data.swift */; };
+		BEA7559A20AE1ACF00B2024F /* GrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559920AE1ACF00B2024F /* GrainViewController.swift */; };
+		BEA7559C20AEEEFF00B2024F /* CoffeeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559B20AEEEFF00B2024F /* CoffeeDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		BE0CAAD220ADBB6800EA696C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BEA7559520ADC1DA00B2024F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		BEA7559720ADCB6D00B2024F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BEA7559920AE1ACF00B2024F /* GrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainViewController.swift; sourceTree = "<group>"; };
+		BEA7559B20AEEEFF00B2024F /* CoffeeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				BE0CAAAC20AC4B4E00EA696C /* LaunchScreen.storyboard */,
 				BE0CAAAF20AC4B4E00EA696C /* Info.plist */,
 				BEA7559720ADCB6D00B2024F /* Data.swift */,
+				BEA7559B20AEEEFF00B2024F /* CoffeeDelegate.swift */,
 			);
 			path = CoffeeHub;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */,
 				BE0CAAD020ADBACA00EA696C /* CoffeeHubTableViewController.swift */,
+				BEA7559920AE1ACF00B2024F /* GrainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			files = (
 				BE0CAABF20AC597500EA696C /* Grain.swift in Sources */,
 				BEA7559620ADC1DA00B2024F /* CollectionViewCell.swift in Sources */,
+				BEA7559C20AEEEFF00B2024F /* CoffeeDelegate.swift in Sources */,
 				BE0CAACD20ADA8C300EA696C /* Card.swift in Sources */,
 				BE0CAAD120ADBACA00EA696C /* CoffeeHubTableViewController.swift in Sources */,
 				BE0CAAD320ADBB6800EA696C /* TableViewCell.swift in Sources */,
@@ -205,6 +212,7 @@
 				BE0CAAA420AC4B4E00EA696C /* AppDelegate.swift in Sources */,
 				BE0CAABD20AC55B000EA696C /* Ingredient.swift in Sources */,
 				BE0CAABB20AC554300EA696C /* Recipe.swift in Sources */,
+				BEA7559A20AE1ACF00B2024F /* GrainViewController.swift in Sources */,
 				BE0CAAC220AC74DD00EA696C /* ArchiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
