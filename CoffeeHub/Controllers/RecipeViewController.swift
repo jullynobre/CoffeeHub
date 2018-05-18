@@ -10,9 +10,26 @@ import UIKit
 
 class RecipeViewController: UIViewController {
 
+    var recipe: Recipe?
+    
+    @IBOutlet weak var imgRecipe: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblDurarion: UILabel!
+    @IBOutlet weak var lblDifficulty: UILabel!
+    @IBOutlet weak var lblIgredients: UILabel!
+    @IBOutlet weak var lblPrepareMode: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let unwrappedRecipe = recipe{
+            self.imgRecipe.image = unwrappedRecipe.icon
+            self.lblName.text = unwrappedRecipe.name
+            self.lblDurarion.text = "\(unwrappedRecipe.prepTime)"
+            self.lblIgredients.text = "Igredients..."
+            self.lblPrepareMode.text = unwrappedRecipe.prepMethod
+            self.lblDifficulty.text = "\(unwrappedRecipe.difficulty)"
+        }
         // Do any additional setup after loading the view.
     }
 
