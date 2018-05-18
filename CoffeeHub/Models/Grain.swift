@@ -12,7 +12,7 @@ import UIKit
 class Grain: Coffee {
     let typeDescription: String
     
-    init(name: String, icon: UIImage?, difficulty: Difficulty, prepTime: Float, typeDescription: String) {
+    init(name: String, icon: UIImage?, typeDescription: String) {
         var image: UIImage = #imageLiteral(resourceName: "placeholderGrain")
         if let unwrappedIcon = icon{
             image = unwrappedIcon
@@ -20,6 +20,6 @@ class Grain: Coffee {
         
         self.typeDescription = typeDescription
     
-        super.init(name: name, icon: image, difficulty: difficulty, prepTime: prepTime)
+        super.init(name: name, icon: image)
     }
 }

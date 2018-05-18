@@ -12,14 +12,10 @@ import UIKit
 class Coffee {
     let name: String
     let icon: UIImage
-    let difficulty: Difficulty
-    let prepTime: Float
     var photos: [UIImage] = []
     
-    init(name: String, icon: UIImage, difficulty: Difficulty, prepTime: Float) {
+    init(name: String, icon: UIImage) {
         self.name = name
         self.icon = icon
-        self.difficulty = difficulty
-        self.prepTime = prepTime
     }
 }

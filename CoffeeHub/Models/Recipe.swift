@@ -12,6 +12,8 @@ import UIKit
 class Recipe: Coffee {
     var ingredients: [Ingredient] = []
     let prepMethod: String
+    let difficulty: Difficulty
+    let prepTime: Float
     
     init(name: String, icon: UIImage?, difficulty: Difficulty, prepTime: Float, prepMethod: String) {
         
@@ -21,7 +23,9 @@ class Recipe: Coffee {
         }
         
         self.prepMethod = prepMethod
+        self.difficulty = difficulty
+        self.prepTime = prepTime
         
-        super.init(name: name, icon: image, difficulty: difficulty, prepTime: prepTime)
+        super.init(name: name, icon: image)
     }
 }
