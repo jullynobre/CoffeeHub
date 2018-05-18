@@ -10,14 +10,18 @@ import UIKit
 
 class GrainViewController: UIViewController {
 
-    //var recipe: Recipe
+    var grain: Grain?
     
     @IBOutlet weak var imgCoffee: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //imgCoffee.image = self.recipe.icon
-        // Do any additional setup after loading the view.
+        if let unwrappedGrain = self.grain{
+            self.title = unwrappedGrain.name
+            
+            self.imgCoffee.image = unwrappedGrain.icon
+        }
     }
 
     override func didReceiveMemoryWarning() {

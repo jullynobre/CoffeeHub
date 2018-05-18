@@ -49,10 +49,9 @@ class CoffeeHubTableViewController: UITableViewController {
         }
         
         cell.collectionView.tag = indexPath.section
-        
+        cell.collectionView.delegate = self
         return cell
     }
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -97,5 +96,36 @@ class CoffeeHubTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+extension CoffeeHubTableViewController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let coffee: Coffee
+        let identifier: String
+        
+        switch collectionView.tag {
+        case 0:
+            coffee = StaticData.sharedInstance.favorites[indexPath.row]
+            identifier = "FavoritesDetails"
+        case 1:
+            coffee = StaticData.sharedInstance.recipes[indexPath.row]
+            identifier = "RecipeDetails"
+        default:
+            coffee = StaticData.sharedInstance.grains[indexPath.row]
+            identifier = "GrainDetails"
+        }
+        
+        self.performSegue(withIdentifier: identifier, sender: coffee)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GrainDetails"{
+            if let controller = segue.destination as? GrainViewController{
+                let grain = sender as! Grain
+                controller.grain = grain
+            }
+        }
+    }
+}
+
