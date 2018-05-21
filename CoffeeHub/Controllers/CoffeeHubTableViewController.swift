@@ -101,12 +101,11 @@ extension CoffeeHubTableViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let coffee: Coffee
-        let identifier: String
+        var identifier: String? = nil
         
         switch collectionView.tag {
         case 0:
             coffee = StaticData.sharedInstance.favorites[indexPath.row]
-            identifier = "FavoritesDetails"
         case 1:
             coffee = StaticData.sharedInstance.recipes[indexPath.row]
             identifier = "RecipeDetails"
@@ -115,7 +114,15 @@ extension CoffeeHubTableViewController: UICollectionViewDelegate{
             identifier = "GrainDetails"
         }
         
-        self.performSegue(withIdentifier: identifier, sender: coffee)
+        if identifier == nil{
+            if coffee is Recipe{
+                identifier = "RecipeDetails"
+            } else{
+                identifier = "GrainDetails"
+            }
+        }
+        
+        self.performSegue(withIdentifier: identifier!, sender: coffee)
         
     }
     
@@ -124,6 +131,12 @@ extension CoffeeHubTableViewController: UICollectionViewDelegate{
             if let controller = segue.destination as? GrainViewController{
                 let grain = sender as! Grain
                 controller.grain = grain
+            }
+        }
+        if segue.identifier == "RecipeDetails"{
+            if let controller = segue.destination as? RecipeViewController{
+                let recipe = sender as! Recipe
+                controller.recipe = recipe
             }
         }
     }

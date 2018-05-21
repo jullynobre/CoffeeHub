@@ -19,9 +19,12 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var lblIgredients: UILabel!
     @IBOutlet weak var lblPrepareMode: UILabel!
     
+    //@IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //self.scrollView.contentSize.width = self.scrollView.frame.size.width - 10
+        
         if let unwrappedRecipe = recipe{
             self.imgRecipe.image = unwrappedRecipe.icon
             self.lblName.text = unwrappedRecipe.name

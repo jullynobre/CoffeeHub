@@ -17,14 +17,13 @@
 		BE0CAABD20AC55B000EA696C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAABC20AC55B000EA696C /* Ingredient.swift */; };
 		BE0CAABF20AC597500EA696C /* Grain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAABE20AC597500EA696C /* Grain.swift */; };
 		BE0CAAC220AC74DD00EA696C /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */; };
-		BE0CAAC720AC75A500EA696C /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0CAAC620AC75A500EA696C /* Card.xib */; };
-		BE0CAACD20ADA8C300EA696C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAACC20ADA8C300EA696C /* Card.swift */; };
 		BE0CAAD120ADBACA00EA696C /* CoffeeHubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAD020ADBACA00EA696C /* CoffeeHubTableViewController.swift */; };
 		BE0CAAD320ADBB6800EA696C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CAAD220ADBB6800EA696C /* TableViewCell.swift */; };
 		BEA7559620ADC1DA00B2024F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559520ADC1DA00B2024F /* CollectionViewCell.swift */; };
 		BEA7559820ADCB6D00B2024F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559720ADCB6D00B2024F /* Data.swift */; };
 		BEA7559A20AE1ACF00B2024F /* GrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559920AE1ACF00B2024F /* GrainViewController.swift */; };
 		BEA7559C20AEEEFF00B2024F /* CoffeeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559B20AEEEFF00B2024F /* CoffeeDelegate.swift */; };
+		BEA7559E20AF210E00B2024F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7559D20AF210E00B2024F /* RecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +39,13 @@
 		BE0CAABC20AC55B000EA696C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		BE0CAABE20AC597500EA696C /* Grain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grain.swift; sourceTree = "<group>"; };
 		BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
-		BE0CAAC620AC75A500EA696C /* Card.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
-		BE0CAACC20ADA8C300EA696C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BE0CAAD020ADBACA00EA696C /* CoffeeHubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeHubTableViewController.swift; sourceTree = "<group>"; };
 		BE0CAAD220ADBB6800EA696C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BEA7559520ADC1DA00B2024F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		BEA7559720ADCB6D00B2024F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BEA7559920AE1ACF00B2024F /* GrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainViewController.swift; sourceTree = "<group>"; };
 		BEA7559B20AEEEFF00B2024F /* CoffeeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDelegate.swift; sourceTree = "<group>"; };
+		BEA7559D20AF210E00B2024F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +110,7 @@
 				BE0CAAC120AC74DD00EA696C /* ArchiveViewController.swift */,
 				BE0CAAD020ADBACA00EA696C /* CoffeeHubTableViewController.swift */,
 				BEA7559920AE1ACF00B2024F /* GrainViewController.swift */,
+				BEA7559D20AF210E00B2024F /* RecipeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,8 +118,6 @@
 		BE0CAAC320AC74EE00EA696C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BE0CAAC620AC75A500EA696C /* Card.xib */,
-				BE0CAACC20ADA8C300EA696C /* Card.swift */,
 				BE0CAAD220ADBB6800EA696C /* TableViewCell.swift */,
 				BEA7559520ADC1DA00B2024F /* CollectionViewCell.swift */,
 			);
@@ -189,7 +186,6 @@
 				BE0CAAAE20AC4B4E00EA696C /* LaunchScreen.storyboard in Resources */,
 				BE0CAAAB20AC4B4E00EA696C /* Assets.xcassets in Resources */,
 				BE0CAAA920AC4B4E00EA696C /* Main.storyboard in Resources */,
-				BE0CAAC720AC75A500EA696C /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +198,8 @@
 			files = (
 				BE0CAABF20AC597500EA696C /* Grain.swift in Sources */,
 				BEA7559620ADC1DA00B2024F /* CollectionViewCell.swift in Sources */,
+				BEA7559E20AF210E00B2024F /* RecipeViewController.swift in Sources */,
 				BEA7559C20AEEEFF00B2024F /* CoffeeDelegate.swift in Sources */,
-				BE0CAACD20ADA8C300EA696C /* Card.swift in Sources */,
 				BE0CAAD120ADBACA00EA696C /* CoffeeHubTableViewController.swift in Sources */,
 				BE0CAAD320ADBB6800EA696C /* TableViewCell.swift in Sources */,
 				BE0CAAB720AC525700EA696C /* Coffee.swift in Sources */,

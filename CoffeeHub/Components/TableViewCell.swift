@@ -67,8 +67,8 @@ extension TableViewCell: UICollectionViewDataSource {
         
         cell.imgCoffee.image = coffee.icon
         cell.lblName.text = coffee.name
-        cell.lblPrepTime.text = "\(coffee.prepTime)"
-        cell.lblDifficulty.text = "\(coffee.difficulty)"
+        //cell.lblPrepTime.text = "\(coffee.prepTime)"
+        //cell.lblDifficulty.text = "\(coffee.difficulty)"
         
         return cell
     }
